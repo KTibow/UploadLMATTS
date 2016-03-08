@@ -53,4 +53,17 @@ new (function() {
 
 (function (ext) {
     
+  var X_SCALE = 2;
+  var Y_SCALE = 1.8;
+  var Z_SCALE = 2;
+
+  var controller = null;
+  var activeHands = null;
+  var activeTools = null;
+  var activeGestures = {
+    'keyTap': {active: false, timer: null},
+    'screenTap': {active: false, timer: null},
+    'swipe': {active: false, timer: null},
+    'circle': {active: false, timer: null}
+  };
 }
