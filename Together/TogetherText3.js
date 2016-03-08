@@ -2,7 +2,7 @@
 /* Extension using the JavaScript Speech API for text to speech */
 /* Sayamindu Dasgupta <sayamindu@media.mit.edu>, April 2014 */
 
-new (function() {
+function(ext) {
     var ext = this;
 
     function _get_voices() {
@@ -50,20 +50,3 @@ new (function() {
 
     ScratchExtensions.register('Text to Speech and LeapMotion', descriptor, ext);
 })();
-
-(function (ext) {
-    
-  var X_SCALE = 2;
-  var Y_SCALE = 1.8;
-  var Z_SCALE = 2;
-
-  var controller = null;
-  var activeHands = null;
-  var activeTools = null;
-  var activeGestures = {
-    'keyTap': {active: false, timer: null},
-    'screenTap': {active: false, timer: null},
-    'swipe': {active: false, timer: null},
-    'circle': {active: false, timer: null}
-  };
-}
