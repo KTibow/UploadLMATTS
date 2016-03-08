@@ -50,3 +50,7 @@ new (function() {
 
     ScratchExtensions.register('Text to Speech and LeapMotion', descriptor, ext);
 })();
+
+(function (ext) {
+    
+}
